@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ebay Description Template</title>
+  <!-- Custom Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Lato:300,400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cacerp2.s3.amazonaws.com/ebay/ebay.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="custom-full-width">
+    <header>
+      <div class="banner-container">
+        <img alt="banner" src="https://static.storeautomator.com/c/JP4JGC/media/38f5b302-0875-49d5-8f2d-c420d8c625b6.jpeg">
+      </div>
+    </header>
+
+    <div class="menu-wrap">
+      <span class="menu-decor"></span>
+      <nav class="menu-nav">
+        <ul class="primary menu-ul">
+
+          <li class="menu-li">
+            <a href="https://www.ebay.com/str/customautocrews" class="menu-a">SHOP ALL</a>
+          </li>
+          <li class="menu-li">
+            <a href="https://www.ebay.com/str/customautocrews/FLOOR-MATS/_i.html?store_cat=14042271015" class="menu-a">Floor Mats</a>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-a">Covers <img class="menu-down-icon" src="https://static.storeautomator.com/c/JP4JGC/media/887ee7f2-32a8-47a5-a6ee-adb56e4fc93d.png"></a>
+            <ul class="sub menu-ul">
+              <li class="menu-li"><a href="https://www.ebay.com/str/customautocrews/STEERING-WHEEL-COVERS/_i.html?store_cat=5836530015" class="menu-a">Steering Wheel Covers</a></li>
+              <li class="menu-li"><a href="https://www.ebay.com/str/customautocrews/SEAT-COVERS/_i.html?store_cat=14042270015" class="menu-a">Seat Covers</a></li>
+              <li class="menu-li"><a href="https://www.ebay.com/str/customautocrews/CAR-COVERS/_i.html?store_cat=5948433015" class="menu-a">Vehicle Covers</a></li>
+              <li class="menu-li"><a href="https://www.ebay.com/str/customautocrews/TONNEAU-COVERS/_i.html?store_cat=23492804015" class="menu-a">Tonneau Covers</a></li>
+            </ul>
+          </li>
+          <li class="menu-li">
+            <a href="https://www.ebay.com/str/customautocrews/AIR-FRESHENERS/_i.html?store_cat=16302123015" class="menu-a">Air Fresheners</a>
+          </li>
+          <li class="menu-li">
+            <a href="https://www.ebay.com/str/customautocrews/SUN-SHADES/_i.html?store_cat=14042275015" class="menu-a">Sunshades</a>
+          </li>
+          <li class="menu-li">
+            <a href="https://www.ebay.com/str/customautocrews/WINDSHIELD-WIPER-BLADES/_i.html?store_cat=16302157015" class="menu-a">Wiper Blades</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="custom-content">
+      <div class="custom-listing-row">
+        <div class="custom-container-width">
+          <div class="row">
+            <div class="col-md-6 custom-description">
+              <h2 class="product-name">{{Product.Name}}</h2>
+              <img class="main-product-image" src="{{Product.ImageUrl}}" alt="main product images">
+              <div>
+
+                <div class="bullet-points-container">
+                  <ul>
+                    {{#each Product.Tags.BulletPoints}}
+                      <li class="product-bulletpoints-dot">
+                        <span class="product-bulletpoints-text">
+                          {{this}}
+                        </span>
+                      </li>
+                    {{/each}}
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{if Product.Tags.BulletPoints}}
+        {{else}}
+          <hr>
+          {{/if}}
+
+          <div class="description-container">
+            <div class="info-titles">
+              <img class="icons" src="https://static.storeautomator.com/c/JP4JGC/media/3459708b-3350-4efe-a126-a1fd3cd7a6fa.png" alt="description icon">
+              <h4><b>
+                  DESCRIPTION
+                </b></h4>
+            </div>
+            <p>{{Product.Description}}</p>
+          </div>
+
+          <hr>
+
+          <div class="custom-listing-row2">
+            <div class="custom-container-width">
+              <div class="custom-tab-content" id="about-us">
+                <div class="info-titles">
+                  <img class="icons" src="https://static.storeautomator.com/c/JP4JGC/media/d42808bb-c289-43e4-baf2-7f86648ee8c8.png" alt="about us icon">
+                  <h4><b>ABOUT US</b></h4>
+                </div>
+                <p>At CustomAutoCrews, we’re dedicated to transforming vehicles into unique expressions of style and performance. Specializing in premium automotive accessories, we blend innovation with craftsmanship to deliver top-tier products that elevate your driving experience. Whether for functionality or flair, our accessories are designed to meet the highest standards, making every ride exceptional. With our wide array of products: floor mats, seat covers, air fresheners, sunshades, and more... - we have got you and your car covered!
+                </p>
+              </div>
+              <div class="custom-tab-content" id="shipping">
+                <div class="info-titles">
+                  <img class="icons" src="https://static.storeautomator.com/c/JP4JGC/media/de247462-7f7e-4807-8cab-471e643a9252.png" alt="shipping icon">
+                  <h4><b>SHIPPING</b></h4>
+                </div>
+                <p><b>Domestic</b> - FREE standard shipping on all orders to the lower 48 states. Additional fees may apply when shipping to Alaska, Hawaii, and U.S. territories. </p>
+
+                <p><b>
+                    International</b> - Shipping provided via eBay's Global Shipping Program. Shipping costs and delivery times may vary based on your location, so please be sure to review the estimated rates and times at checkout. Any applicable duties or customs fees are the responsibility of the customer, and we recommend checking with your local customs office for more information.</p>
+              </div>
+
+              <div class="custom-tab-content" id="returns">
+                <div class="info-titles">
+                  <img class="icons" src="https://static.storeautomator.com/c/JP4JGC/media/f487863b-24d4-4145-8819-27ca6fa68b32.png" alt="return icon">
+                  <h4><b>RETURNS</b></h4>
+                </div>
+                <p>We want you to love your purchase! If you're not completely satisfied, you have 30 days from the date of delivery to return your item(s) for a refund or exchange. Please ensure the item is in its original condition with all packaging and tags.</p>
+              </div>
+              <div class="custom-tab-content">
+                <div class="info-titles">
+                  <img class="icons" src="https://static.storeautomator.com/c/JP4JGC/media/bcabcbd9-131e-4596-be19-e0d887aa70d6.png" alt="customer satisfaction icon">
+                  <h4><b>SATISFACTION GUARANTEED</b></h4>
+                </div>
+                <p>Our automotive accessories are covered by our 365 days buyer-protection program. Your satisfaction is our top priority. We’re confident you’ll love your purchase, but if for any reason you're not completely happy, let us know and we’ll make it right. Whether it’s a replacement or a refund, we’re here to ensure you have a great experience with us—every time.</p>
+                <p>
+                  Have any questions or concerns? Reach out to our customer support team, and we’ll be happy to assist you!
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <div class="custom-container-width">
+          <div class="custom-footer">
+            <div class="row text-center">
+              <img class="footer-cac-logo" alt="CAC logo" src="https://static.storeautomator.com/c/JP4JGC/media/b7fc462f-558c-4a5f-bd11-df6699a53334.png">
+            </div>
+            <p class="text-center">Copyright © 2024 CustomAutoCrews. | All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
